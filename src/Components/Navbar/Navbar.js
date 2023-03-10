@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
   return (
-    <div className="ml-[308px] px-8 w-[1500px] mt-[44px] flex justify-between">
+    <>
+    <div className="ml-[288px] px-8 mt-[44px] flex justify-between max-lg:hidden">
         <div className="myProfile text-[24px] font-semibold">My Profile</div>
         <div className="flex">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -20,13 +21,17 @@ const Navbar = () => {
             </svg>
             <div className="ml-8 -mt-4 flex justify-center items-center">
               <img src="../../assets/person.webp" className="w-12 h-12 rounded-3xl" alt="" />
-              <div class="flex flex-col ml-1">
-              <span>Berkley Erdinc</span>
-              <span className="w-12 rounded text-[11px] bg-green-500">Assistant</span>
-              </div>
+              <div class="flex flex-col ml-2">
+              <span className="text-[16px]">Berkley Erdinc</span>
+              <span className="w-[62px] h-[19px] px-2 rounded text-[11px] bg-[#5EB182] text-white">Assistant</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-[30px]">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
             </div>
         </div>
     </div>
+    </>
   )
 }
 
