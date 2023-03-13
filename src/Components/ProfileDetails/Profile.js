@@ -10,9 +10,9 @@ import { MdOutlineHeadsetMic } from 'react-icons/md'
 const Profile = () => {
   return (
     <>
-    <div className="ml-4 flex flex-col mb-8 max-lg:hidden lg:block">
+    <div className="ml-4 flex flex-col mb-8  lg:block max-lg:w-full">
         <img src="../../assets/person.webp" className="w-[120px] border-2 border-white mx-6 h-[120px] rounded-full absolute z-10" alt="person"/>
-        <div className="w-[606px] h-[150px] bg-white rounded-lg mt-[60px] relative py-[70px] px-6 flex flex-col">
+        <div className="w-[606px] max-lg:w-full h-[150px] bg-white rounded-lg mt-[60px] relative py-[70px] px-6 flex flex-col">
           <span className="text-[24px] font-bold">Berkay Erdinac</span>
           <span class="flex items-center">
             <span>hi@berkayerdinac.com</span>
@@ -23,7 +23,7 @@ const Profile = () => {
             <span className="ml-2"><CiLinkedin/></span>
           </span>
        </div>
-       <div className="flex flex-row mt-4">
+       <div className="flex flex-row mt-4 max-lg:flex-col">
         <div className="flex flex-col">
         <div className="currentPlansDetails w-[260px] h-[355px] bg-white rounded-lg px-4 flex flex-col">
           <span className="text-[18px] py-4 font-semibold">Current Plan Details</span>
@@ -61,10 +61,10 @@ const Profile = () => {
             <span class="text-[16px] font-semibold">on Jun 28, 2022</span>
           </span>
         </div>
-        <div className="mt-4"><Button content="Manage Payment Settings" width="230px"/></div>
+        <div className="mt-9"><Button content="Manage Payment Settings" width="230px"/></div>
         </div>
         </div>
-        <div className="agentORassistant w-[330px] h-[626px] ml-4 bg-white rounded-lg p-4">
+        <div className="agentORassistant w-[330px] h-[626px] ml-4 bg-white rounded-lg p-4 max-lg:mt-4 max-lg:ml-0">
           <div className="flex flex-col text-left">
             <div class="text-[18px] font-semibold">Agent or Assistant? Which license do you need?</div>
             <div className="text[14px] text-[#555B67]">Select the number of agent and assistance licenses you need and complete the purchase</div>
@@ -102,7 +102,7 @@ const Profile = () => {
        </div>
     </div>
     {/* FOR SMALLER SCREENS START */}
-    <div className="w-[460px] flex max-lg:block lg:hidden flex-wrap">
+    {/* <div className="w-[460px] flex max-lg:block lg:hidden flex-wrap">
       <div className="bg-white flex p-6 rounded-lg justify-around">
       <img src="../../assets/person.webp" className="w-[120px] border-2 border-white h-[120px] rounded-lg" alt="person"/>
       <span className="flex flex-col">
@@ -123,7 +123,7 @@ const Profile = () => {
         </div>
         <div className="w-[300px] h-[695px] ml-4 bg-white rounded-lg"></div>
        </div>
-    </div>
+    </div> */}
     {/* FOR SMALLER SCREENS END */}
     </>
   )

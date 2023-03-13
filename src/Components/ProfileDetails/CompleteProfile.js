@@ -5,7 +5,7 @@ import Notification from './Notification'
 
 const CompleteProfile = () => {
   return (
-    <div className="flex flex-row mt-[22px]">
+    <div className="flex mt-[22px] max-lg:flex-col">
         <GeneralProfile/>
         <Profile/>
         <Notification/>

@@ -6,7 +6,7 @@ import MenuItem from '../MenuItem';
 const GeneralProfile = () => {
   return (
     <>
-    <div className="lg:ml-[320px] max-lg:w-[full] max-lg:hidden">
+    <div className="lg:ml-[320px] max-lg:w-[full]">
       <div className="w-[286px] h-[302px] flex text-white flex-col justify-center items-center bg-[#2E63F6] rounded-lg px-4 py-6">
         <div className="w-[80px] h-[80px] border-white border-[10px] text-center p-4 rounded-full">75%</div>
       <div className="text-lg mt-4">Complete Profile</div>
